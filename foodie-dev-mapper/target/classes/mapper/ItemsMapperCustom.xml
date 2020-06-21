@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.imooc.mapper.ItemsMapperCustom">
+    <!--   自定义 查询评价SQL    -->
+    <select id="queryItemComments" parameterType="Map" resultType="com.imooc.pojo.vo.ItemCommentVo">
+        SELECT ic.comment_level as commentLevel,
+               ic.content       as content,
+               ic.sepc_name     as specName,
+               ic.created_time  as createdTime,
+               u.face           as userFace,
+               u.nickname       as nickname
+        FROM items_comments ic
+                     LEFT JOIN
+                     users u
+                             ON
+                                     ic.user_id = u.id
+                WHERE
+                ic.item_id = #{paramsMap.itemId}
+
+        <if test="paramsMap.level != null and paramsMap.level != '0'">
+            AND ic.comment_level = #{paramsMap.level}
+        </if>
+    </select>
+
+    <!-- 搜索商品sql  -->
+    <select id="searchItems" parameterType="Map" resultType="com.imooc.pojo.vo.SearchItemsVO">
+        SELECT i.id                    as itemId,
+               i.item_name             as itemName,
+               -- 销量
+               i.sell_counts           as sellCounts,
+               ii.url                  as imgUrl,
+               tempSpec.price_discount as price
+        FROM items i
+
+                     LEFT JOIN -- 关联图片
+                items_img ii
+                ON -- 条件商品id 等于图片表的外键商品id
+                        i.id = ii.item_id
+
+                     LEFT JOIN -- 将他作为一张临时表 和临时表的多表关联
+                (SELECT item_id,
+                        MIN(price_discount) as price_discount -- 根据商品id 查询商品最小值 优惠价格
+                 FROM items_spec -- 从商品价格表查询
+                 GROUP BY item_id -- 按照商品id分组
+                        ) tempSpec -- 临时表取名为 tempSpec
+                ON -- 临时表的条件 商品表的id 跟 临时表id一样
+                        i.id = tempSpec.item_id
+
+                WHERE ii.is_main = 1 -- 判断主图为1
+
+                -- 判断 前端传来的keywords 搜索内容不为空 -- 拼接的时候 用$
+        <if test="paramsMap.keywords != null and paramsMap.level != '0'">
+            AND i.item_name like '%${paramsMap.keywords}%'
+        </if>
+        -- 排序
+                order by
+                -- 多条件判断
+                -- k: 默认,代表默认排序,根据name
+                -- c: 根据销量排序
+                -- p: 根据价格排序
+
+        <choose>
+            <when test="paramsMap.sort == &quot;c&quot;">
+                i.sell_counts DESC
+            </when>
+            <when test="paramsMap.sort == &quot;p&quot;">
+
+
+
+
+                tempSpec.price_discount ASC
+
+
+
+
+            </when>
+            <otherwise>
+
+
+
+
+                i.item_name ASC
+
+
+
+
+            </otherwise>
+        </choose>
+    </select>
+
+    <!-- 首页的三级分类搜索商品sql  -->
+    <select id="searchItemsByThirdCat" parameterType="Map" resultType="com.imooc.pojo.vo.SearchItemsVO">
+        SELECT i.id                    as itemId,
+               i.item_name             as itemName,
+               -- 销量
+               i.sell_counts           as sellCounts,
+               ii.url                  as imgUrl,
+               tempSpec.price_discount as price
+        FROM items i
+
+                     LEFT JOIN -- 关联图片
+                items_img ii
+                ON -- 条件商品id 等于图片表的外键商品id
+                        i.id = ii.item_id
+
+                     LEFT JOIN -- 将他作为一张临时表 和临时表的多表关联
+                (SELECT item_id,
+                        MIN(price_discount) as price_discount -- 根据商品id 查询商品最小值 优惠价格
+                 FROM items_spec -- 从商品价格表查询
+                 GROUP BY item_id -- 按照商品id分组
+                        ) tempSpec -- 临时表取名为 tempSpec
+                ON -- 临时表的条件 商品表的id 跟 临时表id一样
+                        i.id = tempSpec.item_id
+
+        WHERE ii.is_main = 1 -- 判断主图为1
+
+                -- 判断前端传进来的三级分类catId
+          AND i.cat_id = #{paramsMap.catId}
+
+                -- 排序
+                order by
+                -- 多条件判断
+                -- k: 默认,代表默认排序,根据name
+                -- c: 根据销量排序
+                -- p: 根据价格排序
+
+        <choose>
+            <when test="paramsMap.sort == &quot;c&quot;">
+                i.sell_counts DESC
+            </when>
+            <when test="paramsMap.sort == &quot;p&quot;">
+
+
+
+
+                tempSpec.price_discount ASC
+
+
+
+
+            </when>
+            <otherwise>
+
+
+
+
+                i.item_name ASC
+
+
+
+
+            </otherwise>
+        </choose>
+    </select>
+    <!--         &quot;转译-->
+
+    <!--刷新购物车数据sql-->
+    <select id="queryItemsBySpecIds" parameterType="List" resultType="com.imooc.pojo.vo.ShopCartVO">
+        SELECT t_items.id                  as itemId,
+               t_items.item_name           as itemName,
+               t_items_img.url             as itemImgUrl,
+               t_items_spec.id             as specId,
+               t_items_spec.`name`         as specName,
+               t_items_spec.price_discount as priceDiscount,
+               t_items_spec.price_normal   as priceNormal
+
+               -- 查询规格表
+        FROM items_spec t_items_spec
+                     -- 关联商品表
+                     LEFT JOIN
+                     items t_items
+                             ON
+                                     t_items.id = t_items_spec.item_id
+                             -- 关联图片表
+                     LEFT JOIN
+                     items_img t_items_img
+                             ON
+                                     t_items_img.item_id = t_items.id
+                WHERE t_items_img.is_main = 1
+                  AND
+                -- 查询这些 id
+                t_items_spec.id IN
+
+        <foreach collection="paramsList" index="index" item="specId" open="(" separator="," close=")">
+            #{specId}
+        </foreach>
+    </select>
+    <!--    拼接数据 collection:传进来的数据 index下标 item循环元素的名称 open="(" close=")" 区间 闭合 separator="," 间隔 #{specId}拼接-->
+
+    <!--  减库存  -->
+    <update id="decreaseItemSpecStock">
+        -- 更新操作
+                UPDATE
+                        items_spec
+                SET stock =stock - #{pendingCounts}
+                    --  条件 id等于 规格id   and 扣掉的库存必须大于等于 现有的库存
+                WHERE id = #{specId}
+                  AND stock >= #{pendingCounts}
+    </update>
+</mapper>

@@ -1,0 +1,10 @@
+2020-06-11 16:00:20.375 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 16:01:47.112 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 16:13:57.032 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 16:33:00.764 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 16:39:05.212 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 17:03:06.636 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 17:58:45.502 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 18:50:25.470 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 18:50:45.732 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-06-11 18:51:25.590 [DateSourceHikariCP housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool -DateSourceHikariCP - Thread starvation or clock leap detected (housekeeper delta=55s620ms969µs600ns).

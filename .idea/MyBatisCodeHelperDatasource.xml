@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="javaMapperPackage" value="maper" />
+        <option name="javaMapperPath" value="Z:\ojb\foodie-dev\foodie-dev-api\src\main\java\maper" />
+        <option name="javaModelPackage" value="model" />
+        <option name="javaModelPath" value="Z:\ojb\foodie-dev\foodie-dev-api\src\main\java\model" />
+        <option name="lastDatabaseCrudChooseModuleName" value="foodie-dev-api" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="mapperAnnotaion" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="foodie-dev">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.dd2" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="javaModelPacakge" value="com.dd" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
+                  <option name="xmlPackage" value="com.dd3" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+            <entry key="foodie-dev-api">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="maper" />
+                  <option name="javaMapperPath" value="Z:\ojb\foodie-dev\foodie-dev-api\src\main\java\maper" />
+                  <option name="javaModelPacakge" value="model" />
+                  <option name="javaModelPath" value="Z:\ojb\foodie-dev\foodie-dev-api\src\main\java\model" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/foodie-dev-api/src/main/java" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/foodie-dev-api/src/main/java" />
+                  <option name="xmlPackage" value="maper2" />
+                  <option name="xmlPath" value="Z:\ojb\foodie-dev\foodie-dev-api\src\main\java\maper2" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="foodie-shop-dev:carousel">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="Carousel" />
+                  <option name="moduleName" value="foodie-dev-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="foodie-shop-dev:category">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Category" />
+                  <option name="moduleName" value="foodie-dev-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="foodie-shop-dev:items_img">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="ItemsImg" />
+                  <option name="moduleName" value="foodie-dev-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="foodie-shop-dev:items_param">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="ItemsParam" />
+                  <option name="moduleName" value="foodie-dev-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="foodie-shop-dev:user_address">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="UserAddress" />
+                  <option name="moduleName" value="foodie-dev-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="foodie-shop-dev:users">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="Users" />
+                  <option name="moduleName" value="foodie-dev-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="maper2" />
+        <option name="xmlMapperPath" value="Z:\ojb\foodie-dev\foodie-dev-api\src\main\java\maper2" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

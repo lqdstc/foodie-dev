@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.imooc.mapper.CategoryMapperCustom">
+
+    <!--   基本字段映射 映射-->
+    <resultMap id="myCategoryVO" type="com.imooc.pojo.vo.CategoryVo">
+        <!-- 基本字段映射 column对应sql     property对应实体类  对应的是myCategoryVO  -->
+        <id column="id" property="id"/>
+        <!--        <id column="subId" property="subId"/>-->
+        <result column="name" property="name"/>
+        <result column="type" property="type"/>
+        <result column="fatherId" property="fatherId"/>
+
+
+        <!--  collection 标签： 集合映射   第一个是类名 第二个是返回的类型属性的包位置
+           property ：对应三级分类的list属性名
+           ofType：集合的类型 三级分类的vo
+         -->
+        <collection property="subCatList" ofType="com.imooc.pojo.vo.SubCategoryVo">
+            <!--      映射的是 SubCategoryVo     -->
+            <id column="subId" property="subId"/>
+            <result column="subName" property="subName"/>
+            <result column="subType" property="subType"/>
+            <result column="subFatherId" property="subFatherId"/>
+        </collection>
+    </resultMap>
+
+    <select id="getSubCatList" resultMap="myCategoryVO" parameterType="int">
+        SELECT f.id        as id,
+               f.`name`    as `name`,
+               f.type      as type,
+               f.father_id as fatherId,
+               c.id        as subId,
+               c.`name`    as subName,
+               c.type      as subType,
+               c.father_id as subFatherId
+        FROM category f
+                 LEFT JOIN
+             category c
+             on
+                 f.id = c.father_id
+        WHERE f.father_id = #{rootCatId}
+    </select>
+
+    <!--   基本字段映射 映射-->
+    <resultMap id="myNewItemsVO" type="com.imooc.pojo.vo.NewItemsVO">
+        <!-- 基本字段映射 column对应sql     property对应实体类  对应的是myCategoryVO  -->
+        <id column="rootCatId" property="rootCatId"/>
+        <result column="rootCatName" property="rootCatName"/>
+        <result column="slogan" property="slogan"/>
+        <result column="CatImage" property="catImage"/>
+        <result column="bgColor" property="bgColor"/>
+
+        <!--  collection 标签： 集合映射   第一个是类名 第二个是返回的类型属性的包位置
+          property ：对应三级分类的list属性名
+          ofType：集合的类型 三级分类的vo
+        -->
+        <collection property="simpleItemList" ofType="com.imooc.pojo.vo.SimpleItemVO">
+            <!--      映射的是 SubCategoryVo     -->
+            <id column="itemId" property="itemId"/>
+            <result column="itemName" property="itemName"/>
+            <result column="itemUrl" property="itemUrl"/>
+        </collection>
+    </resultMap>
+
+
+    <!--  自定义接口名字  输出展示VO   传进来的数据类型  -->
+    <select id="getSixNewItemsLazy" resultMap="myNewItemsVO" parameterType="map">
+        SELECT f.id           as rootCatId,
+               f.`name`       as rootCatName,
+               f.slogan       as slogan,
+               f.cat_image    as CatImage,
+               f.bg_color     as bgColor,
+               i.id           as itemId,
+               i.item_name    as itemName,
+               ii.url         as itemUrl,
+               i.created_time as createdTime
+        FROM category f
+                 LEFT JOIN items i ON f.id = i.root_cat_id
+                 LEFT JOIN items_img ii ON i.id = ii.item_id
+        WHERE f.type = 1
+          AND i.root_cat_id = #{paramsMap.rootCatId}
+          AND ii.is_main = 1
+
+        ORDER BY i.created_time
+            DESC
+        LIMIT 0,6
+    </select>
+
+</mapper>

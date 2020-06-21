@@ -1,0 +1,579 @@
+2020-06-20 14:09:55.880 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 420 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 14:09:55.889 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 14:09:57.761 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a5b6fb08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 14:09:58.444 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 14:09:58.463 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 14:09:58.480 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 14:09:58.480 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 14:09:58.704 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 14:09:58.705 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2705 ms
+2020-06-20 14:10:01.623 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 14:10:01.880 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 14:10:02.070 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 14:10:02.072 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 14:10:02.073 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 14:10:02.074 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 14:10:02.434 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 14:10:02.461 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 14:10:02.505 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 14:10:02.699 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 14:10:02.717 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 14:10:02.740 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 14:10:02.765 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 14:10:02.768 [main] INFO  com.imooc.Application -Started Application in 7.925 seconds (JVM running for 9.732)
+2020-06-20 14:10:06.482 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 14:10:06.482 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 14:10:06.493 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 11 ms
+2020-06-20 14:10:14.546 [http-nio-8088-exec-8] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.UserServiceImpl 方法：queryUserForLogin ======
+2020-06-20 14:10:14.613 [http-nio-8088-exec-8] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 14:10:14.993 [http-nio-8088-exec-8] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Start completed.
+2020-06-20 14:10:15.085 [http-nio-8088-exec-8] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:539毫秒 ========
+2020-06-20 14:10:15.095 [http-nio-8088-exec-8] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 14:10:15.508 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 14:10:15.509 [http-nio-8088-exec-9] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 14:10:15.521 [http-nio-8088-exec-9] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:12毫秒 ========
+2020-06-20 14:10:15.523 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:15毫秒 ========
+2020-06-20 14:10:15.588 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 14:10:15.608 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:20毫秒 ========
+2020-06-20 14:10:18.368 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryItemById ======
+2020-06-20 14:10:18.371 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryCommentCounts ======
+2020-06-20 14:10:18.371 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryPagedComments ======
+2020-06-20 14:10:18.377 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:9毫秒 ========
+2020-06-20 14:10:18.378 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryItemImgList ======
+2020-06-20 14:10:18.383 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:5毫秒 ========
+2020-06-20 14:10:18.383 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryItemSpecList ======
+2020-06-20 14:10:18.389 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:18毫秒 ========
+2020-06-20 14:10:18.394 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:11毫秒 ========
+2020-06-20 14:10:18.394 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryItemsParam ======
+2020-06-20 14:10:18.401 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:7毫秒 ========
+2020-06-20 14:10:18.438 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:67毫秒 ========
+2020-06-20 14:10:25.675 [http-nio-8088-exec-8] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryItemsBySpecIds ======
+2020-06-20 14:10:25.679 [http-nio-8088-exec-8] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:4毫秒 ========
+2020-06-20 14:10:28.402 [http-nio-8088-exec-9] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.AddressServiceImpl 方法：queryAll ======
+2020-06-20 14:10:28.417 [http-nio-8088-exec-9] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:14毫秒 ========
+2020-06-20 14:10:30.784 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.OrderServiceImpl 方法：createOrder ======
+2020-06-20 14:10:30.787 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.AddressServiceImpl 方法：queryUserAddres ======
+2020-06-20 14:10:30.794 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:6毫秒 ========
+2020-06-20 14:10:30.794 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryItemSpecById ======
+2020-06-20 14:10:30.806 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:12毫秒 ========
+2020-06-20 14:10:30.806 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryItemById ======
+2020-06-20 14:10:30.807 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:1毫秒 ========
+2020-06-20 14:10:30.808 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：queryItemMainImgById ======
+2020-06-20 14:10:30.810 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:2毫秒 ========
+2020-06-20 14:10:30.827 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.ItemServiceImpl 方法：decreaseItemSpecStock ======
+2020-06-20 14:10:30.833 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:6毫秒 ========
+2020-06-20 14:10:30.850 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:66毫秒 ========
+2020-06-20 14:10:30.855 [http-nio-8088-exec-7] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 15:22:04.894 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 15:22:04.894 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 15:22:05.046 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:150毫秒 ========
+2020-06-20 15:22:05.049 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:153毫秒 ========
+2020-06-20 15:22:05.572 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 15:22:05.651 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:79毫秒 ========
+2020-06-20 15:25:36.398 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSubCatList ======
+2020-06-20 15:25:36.409 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:10毫秒 ========
+2020-06-20 15:25:36.412 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSubCatList ======
+2020-06-20 15:25:36.419 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:7毫秒 ========
+2020-06-20 15:30:25.402 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 7192 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 15:30:25.406 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 15:30:26.905 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d12391d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 15:30:27.342 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 15:30:27.360 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 15:30:27.372 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 15:30:27.372 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 15:30:27.539 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 15:30:27.539 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2046 ms
+2020-06-20 15:30:29.358 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 15:30:29.514 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 15:30:29.640 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 15:30:29.640 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 15:30:29.641 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 15:30:29.641 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 15:30:29.791 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 15:30:29.814 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 15:30:29.853 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 15:30:30.033 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 15:30:30.050 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 15:30:30.071 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 15:30:30.095 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 15:30:30.098 [main] INFO  com.imooc.Application -Started Application in 5.449 seconds (JVM running for 6.625)
+2020-06-20 15:30:34.712 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 15:30:34.712 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 15:30:34.721 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 9 ms
+2020-06-20 15:30:34.831 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.UserServiceImpl 方法：queryUserForLogin ======
+2020-06-20 15:30:34.890 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 15:30:35.073 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Start completed.
+2020-06-20 15:30:35.131 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:300毫秒 ========
+2020-06-20 15:30:35.155 [http-nio-8088-exec-2] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 16:19:44.747 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 12568 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:19:44.752 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:19:46.356 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b9ccdba8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:19:46.782 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:19:46.797 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:19:46.808 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:19:46.808 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:19:46.976 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:19:46.976 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2108 ms
+2020-06-20 16:19:48.793 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:19:48.951 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:19:49.080 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:19:49.081 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:19:49.081 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:19:49.082 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:19:49.239 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:19:49.258 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:19:49.294 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:19:49.482 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:19:49.502 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:19:49.521 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:19:49.546 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:19:49.549 [main] INFO  com.imooc.Application -Started Application in 5.708 seconds (JVM running for 6.848)
+2020-06-20 16:30:20.741 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:30:20.741 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:30:20.754 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 13 ms
+2020-06-20 16:30:20.803 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:30:33.038 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.UserServiceImpl 方法：queryUserForLogin ======
+2020-06-20 16:30:33.060 [http-nio-8088-exec-3] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:30:37.196 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.UserServiceImpl 方法：queryUserForLogin ======
+2020-06-20 16:30:38.144 [http-nio-8088-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:30:48.246 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.UserServiceImpl 方法：queryUserForLogin ======
+2020-06-20 16:30:48.247 [http-nio-8088-exec-6] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:01.055 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 14596 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:31:01.060 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:31:02.518 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fe4ca6a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:31:02.943 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:31:02.958 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:31:02.969 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:31:02.969 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:31:03.130 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:31:03.130 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1960 ms
+2020-06-20 16:31:04.830 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:31:04.983 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:31:05.102 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:31:05.103 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:31:05.103 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:31:05.104 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:31:05.248 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:31:05.268 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:31:05.307 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:31:05.478 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:31:05.494 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:31:05.513 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:31:05.536 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:31:05.540 [main] INFO  com.imooc.Application -Started Application in 5.206 seconds (JVM running for 6.243)
+2020-06-20 16:31:07.842 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:31:07.842 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:31:07.851 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 9 ms
+2020-06-20 16:31:07.946 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.UserServiceImpl 方法：queryUserForLogin ======
+2020-06-20 16:31:08.001 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:18.839 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:18.839 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:18.843 [http-nio-8088-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:22.352 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:22.352 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:23.853 [http-nio-8088-exec-5] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:26.800 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:26.801 [http-nio-8088-exec-8] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:28.820 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:28.820 [http-nio-8088-exec-9] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:28.865 [http-nio-8088-exec-6] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:31.046 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:31.047 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:33.876 [http-nio-8088-exec-3] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:38.887 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:43.901 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:44.529 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:44.529 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:45.598 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:45.599 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:46.526 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:46.527 [http-nio-8088-exec-11] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:47.320 [http-nio-8088-exec-12] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:31:47.322 [http-nio-8088-exec-13] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:31:48.912 [http-nio-8088-exec-9] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:53.922 [http-nio-8088-exec-10] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:31:58.931 [http-nio-8088-exec-8] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:03.940 [http-nio-8088-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:08.952 [http-nio-8088-exec-13] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:13.960 [http-nio-8088-exec-12] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:18.969 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:23.995 [http-nio-8088-exec-11] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:29.004 [http-nio-8088-exec-3] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:34.014 [http-nio-8088-exec-6] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:39.026 [http-nio-8088-exec-5] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:32:44.041 [http-nio-8088-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:35:16.480 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 1068 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:35:16.484 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:35:17.867 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0143296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:35:18.291 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:35:18.307 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:35:18.317 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:35:18.317 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:35:18.479 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:35:18.479 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1914 ms
+2020-06-20 16:35:20.248 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:35:20.401 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:35:20.526 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:35:20.527 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:35:20.528 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:35:20.528 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:35:20.680 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:35:20.699 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:35:20.737 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:35:20.913 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:35:20.930 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:35:20.950 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:35:20.974 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:35:20.977 [main] INFO  com.imooc.Application -Started Application in 5.204 seconds (JVM running for 6.354)
+2020-06-20 16:35:37.093 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:35:37.093 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:35:37.102 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 9 ms
+2020-06-20 16:36:09.193 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:37:53.544 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:37:53.545 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:37:53.572 [http-nio-8088-exec-10] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:37:53.766 [http-nio-8088-exec-10] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Start completed.
+2020-06-20 16:37:53.812 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:267毫秒 ========
+2020-06-20 16:37:53.813 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:268毫秒 ========
+2020-06-20 16:37:53.841 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:37:53.859 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:18毫秒 ========
+2020-06-20 16:37:53.907 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSubCatList ======
+2020-06-20 16:37:53.916 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:9毫秒 ========
+2020-06-20 16:37:55.688 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:37:55.695 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:6毫秒 ========
+2020-06-20 16:37:56.005 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:37:56.011 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:5毫秒 ========
+2020-06-20 16:37:56.771 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:37:56.775 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:4毫秒 ========
+2020-06-20 16:37:57.105 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:37:57.108 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:3毫秒 ========
+2020-06-20 16:38:09.906 [http-nio-8088-exec-1] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 16:38:10.220 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:38:10.220 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:38:10.224 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:4毫秒 ========
+2020-06-20 16:38:10.225 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:5毫秒 ========
+2020-06-20 16:38:10.299 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:38:10.304 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:4毫秒 ========
+2020-06-20 16:38:14.191 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:38:14.195 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:4毫秒 ========
+2020-06-20 16:38:17.999 [http-nio-8088-exec-9] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.UserServiceImpl 方法：queryUserForLogin ======
+2020-06-20 16:38:18.008 [http-nio-8088-exec-9] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:9毫秒 ========
+2020-06-20 16:38:18.010 [http-nio-8088-exec-9] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 16:38:18.332 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:38:18.333 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:38:18.339 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:7毫秒 ========
+2020-06-20 16:38:18.339 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:6毫秒 ========
+2020-06-20 16:38:18.419 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:38:18.426 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:7毫秒 ========
+2020-06-20 16:39:03.648 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:41:02.718 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 10220 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:41:02.724 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:41:04.175 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e0e323f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:41:04.583 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:41:04.598 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:41:04.609 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:41:04.610 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:41:04.773 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:41:04.774 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1946 ms
+2020-06-20 16:41:06.580 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:41:06.750 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:41:06.882 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:41:06.883 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:41:06.884 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:41:06.884 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:41:07.039 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:41:07.059 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:41:07.093 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:41:07.260 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:41:07.277 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:41:07.297 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:41:07.324 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:41:07.327 [main] INFO  com.imooc.Application -Started Application in 5.433 seconds (JVM running for 6.425)
+2020-06-20 16:41:20.138 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:41:20.138 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:41:20.147 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 9 ms
+2020-06-20 16:41:31.067 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:41:34.664 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:41:38.673 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:42:14.618 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:42:57.543 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 12892 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:42:57.547 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:42:58.905 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$678757f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:42:59.313 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:42:59.328 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:42:59.338 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:42:59.338 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:42:59.495 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:42:59.495 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1860 ms
+2020-06-20 16:43:01.253 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:43:01.410 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:43:01.541 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:43:01.542 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:43:01.543 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:43:01.543 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:43:01.701 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:43:01.720 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:43:01.755 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:43:01.924 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:43:01.940 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:43:01.959 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:43:01.983 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:43:01.986 [main] INFO  com.imooc.Application -Started Application in 5.176 seconds (JVM running for 6.285)
+2020-06-20 16:43:08.036 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:43:08.036 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:43:08.044 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 8 ms
+2020-06-20 16:43:08.089 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:43:27.719 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:44:04.326 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 144 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:44:04.330 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:44:05.871 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc837bc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:44:06.306 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:44:06.323 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:44:06.334 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:44:06.334 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:44:06.508 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:44:06.508 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2103 ms
+2020-06-20 16:44:08.453 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:44:08.621 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:44:08.772 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:44:08.773 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:44:08.774 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:44:08.774 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:44:08.935 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:44:08.958 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:44:08.999 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:44:09.184 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:44:09.201 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:44:09.223 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:44:09.250 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:44:09.254 [main] INFO  com.imooc.Application -Started Application in 5.624 seconds (JVM running for 7.495)
+2020-06-20 16:44:31.272 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:44:31.272 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:44:31.282 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 10 ms
+2020-06-20 16:45:28.860 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:45:28.951 [Thread-14] INFO  o.s.s.c.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:45:33.414 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 5740 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:45:33.418 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:45:34.964 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$884cd7d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:45:35.426 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:45:35.442 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:45:35.453 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:45:35.454 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:45:35.626 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:45:35.627 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2131 ms
+2020-06-20 16:45:37.687 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:45:37.866 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:45:38.037 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:45:38.038 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:45:38.039 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:45:38.039 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:45:38.215 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:45:38.238 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:45:38.284 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:45:38.479 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:45:38.498 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:45:38.520 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:45:38.557 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:45:38.563 [main] INFO  com.imooc.Application -Started Application in 5.964 seconds (JVM running for 7.318)
+2020-06-20 16:45:40.563 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:45:40.563 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:45:40.573 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 10 ms
+2020-06-20 16:45:40.616 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:45:46.930 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:46:38.653 [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:46:41.884 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 7200 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:46:41.887 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:46:43.490 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b4dc1b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:46:43.959 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:46:43.977 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:46:43.988 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:46:43.988 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:46:44.166 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:46:44.167 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2191 ms
+2020-06-20 16:46:46.075 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:46:46.251 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:46:46.431 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:46:46.432 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:46:46.433 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:46:46.433 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:46:46.639 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:46:46.669 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:46:46.721 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:46:46.944 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:46:46.963 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:46:46.985 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:46:47.017 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:46:47.023 [main] INFO  com.imooc.Application -Started Application in 5.905 seconds (JVM running for 7.383)
+2020-06-20 16:47:12.608 [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:47:19.073 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 3624 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:47:19.077 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:47:20.649 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5557632c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:47:21.104 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:47:21.121 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:47:21.132 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:47:21.133 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:47:21.312 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:47:21.312 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2159 ms
+2020-06-20 16:47:23.361 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:47:23.556 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:47:23.730 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:47:23.732 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:47:23.732 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:47:23.732 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:47:23.930 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:47:23.962 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:47:24.016 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:47:24.280 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:47:24.303 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:47:24.331 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:47:24.368 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:47:24.372 [main] INFO  com.imooc.Application -Started Application in 6.096 seconds (JVM running for 7.508)
+2020-06-20 16:47:26.603 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:47:26.603 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:47:26.615 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 12 ms
+2020-06-20 16:47:26.662 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:47:43.540 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:47:43.618 [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:47:43.765 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Start completed.
+2020-06-20 16:47:47.896 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 2724 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 16:47:47.900 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 16:47:49.286 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$917823c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 16:47:49.703 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 16:47:49.717 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:47:49.728 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 16:47:49.728 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 16:47:49.887 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 16:47:49.887 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1896 ms
+2020-06-20 16:47:51.594 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 16:47:51.746 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 16:47:51.865 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 16:47:51.865 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 16:47:51.866 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 16:47:51.866 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 16:47:52.014 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 16:47:52.033 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 16:47:52.067 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 16:47:52.236 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 16:47:52.253 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 16:47:52.274 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 16:47:52.304 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 16:47:52.307 [main] INFO  com.imooc.Application -Started Application in 5.135 seconds (JVM running for 6.129)
+2020-06-20 16:47:57.236 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 16:47:57.237 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 16:47:57.245 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 8 ms
+2020-06-20 16:47:57.284 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:47:57.329 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 16:47:57.513 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Start completed.
+2020-06-20 16:47:57.553 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:268毫秒 ========
+2020-06-20 16:48:15.519 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.UserServiceImpl 方法：queryUserForLogin ======
+2020-06-20 16:48:15.553 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:34毫秒 ========
+2020-06-20 16:48:15.560 [http-nio-8088-exec-3] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 16:48:15.840 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：queryAllRootLevelCat ======
+2020-06-20 16:48:15.840 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CarouselServiceImpl 方法：queryAll ======
+2020-06-20 16:48:15.852 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:12毫秒 ========
+2020-06-20 16:48:15.852 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:12毫秒 ========
+2020-06-20 16:48:15.911 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.CategoryServiceImpl 方法：getSixNewItemsLazy ======
+2020-06-20 16:48:15.929 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:18毫秒 ========
+2020-06-20 16:48:42.850 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:48:42.854 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:3毫秒 ========
+2020-06-20 16:48:48.968 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 16:48:48.971 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:3毫秒 ========
+2020-06-20 17:25:23.496 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 4844 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 17:25:23.500 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 17:25:24.952 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6cac5fdf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 17:25:25.386 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 17:25:25.401 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 17:25:25.411 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 17:25:25.412 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 17:25:25.574 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 17:25:25.574 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1973 ms
+2020-06-20 17:33:09.364 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 1568 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 17:33:09.369 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 17:33:10.739 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6624a93c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 17:33:11.157 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 17:33:11.172 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 17:33:11.182 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 17:33:11.183 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 17:33:11.344 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 17:33:11.344 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1892 ms
+2020-06-20 17:33:13.044 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 17:33:13.196 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 17:33:13.318 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 17:33:13.319 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 17:33:13.319 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 17:33:13.319 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 17:33:13.466 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 17:33:13.485 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 17:33:13.519 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 17:33:13.664 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: updateUsingPOST_1
+2020-06-20 17:33:13.672 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: updateUsingPOST_2
+2020-06-20 17:33:13.695 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 17:33:13.710 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 17:33:13.729 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 17:33:13.754 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 17:33:13.758 [main] INFO  com.imooc.Application -Started Application in 5.086 seconds (JVM running for 6.105)
+2020-06-20 17:33:20.319 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 17:33:20.319 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 17:33:20.328 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 9 ms
+2020-06-20 17:33:20.376 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 17:33:20.401 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 17:33:20.588 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Start completed.
+2020-06-20 17:33:20.623 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:247毫秒 ========
+2020-06-20 17:34:24.497 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：upDateUserInfo ======
+2020-06-20 17:34:24.524 [http-nio-8088-exec-4] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:27毫秒 ========
+2020-06-20 17:34:24.535 [http-nio-8088-exec-4] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 17:34:26.051 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 17:34:26.054 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:3毫秒 ========
+2020-06-20 17:34:31.815 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 17:34:31.818 [http-nio-8088-exec-6] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:2毫秒 ========
+2020-06-20 17:34:35.521 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 17:34:35.525 [http-nio-8088-exec-7] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:4毫秒 ========
+2020-06-20 17:35:30.719 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：upDateUserInfo ======
+2020-06-20 17:35:30.724 [http-nio-8088-exec-10] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:5毫秒 ========
+2020-06-20 17:35:30.728 [http-nio-8088-exec-10] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 17:35:31.911 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 17:35:31.914 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:3毫秒 ========
+2020-06-20 18:16:57.693 [main] INFO  com.imooc.Application -Starting Application on GOM4JIVD1QDJHAG with PID 6036 (Z:\ojb\foodie-dev\foodie-dev-api\target\classes started by Administrator in Z:\ojb\foodie-dev)
+2020-06-20 18:16:57.698 [main] INFO  com.imooc.Application -No active profile set, falling back to default profiles: default
+2020-06-20 18:16:59.229 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12cd9bf6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-20 18:16:59.694 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8088 (http)
+2020-06-20 18:16:59.711 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-20 18:16:59.724 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-06-20 18:16:59.724 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-06-20 18:16:59.896 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-06-20 18:16:59.896 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2090 ms
+2020-06-20 18:17:01.944 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-20 18:17:02.113 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-20 18:17:02.246 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-20 18:17:02.247 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-20 18:17:02.248 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-20 18:17:02.248 [main] INFO  t.m.m.a.MapperCacheDisabler -Clear EntityHelper entityTableMap cache.
+2020-06-20 18:17:02.415 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-06-20 18:17:02.442 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-06-20 18:17:02.488 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-06-20 18:17:02.669 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: updateUsingPOST_1
+2020-06-20 18:17:02.689 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: updateUsingPOST_2
+2020-06-20 18:17:02.725 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: searchUsingGET_1
+2020-06-20 18:17:02.747 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: addUsingPOST_1
+2020-06-20 18:17:02.772 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8088"]
+2020-06-20 18:17:02.814 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8088 (http) with context path ''
+2020-06-20 18:17:02.817 [main] INFO  com.imooc.Application -Started Application in 5.966 seconds (JVM running for 7.011)
+2020-06-20 18:17:34.810 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-20 18:17:34.810 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-06-20 18:17:34.819 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 9 ms
+2020-06-20 18:17:34.993 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Starting...
+2020-06-20 18:17:35.218 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -DateSourceHikariCP - Start completed.
+2020-06-20 18:17:35.226 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：upDateUserInfo ======
+2020-06-20 18:17:35.319 [http-nio-8088-exec-2] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:92毫秒 ========
+2020-06-20 18:17:35.346 [http-nio-8088-exec-2] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 18:17:37.808 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：queryUserInfo ======
+2020-06-20 18:17:37.813 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:4毫秒 ========
+2020-06-20 18:17:38.716 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：upDateUserInfo ======
+2020-06-20 18:17:38.723 [http-nio-8088-exec-5] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:7毫秒 ========
+2020-06-20 18:17:38.726 [http-nio-8088-exec-5] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 18:22:00.501 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：upDateUserInfo ======
+2020-06-20 18:22:00.530 [http-nio-8088-exec-1] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:29毫秒 ========
+2020-06-20 18:22:00.533 [http-nio-8088-exec-1] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
+2020-06-20 18:23:18.048 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -====== 开始执行 类：class com.imooc.service.impl.center.CenterUserServiceImpl 方法：upDateUserInfo ======
+2020-06-20 18:23:18.055 [http-nio-8088-exec-3] INFO  com.imooc.aspect.ServiceLogAspect -======= 执行结束，耗时:7毫秒 ========
+2020-06-20 18:23:18.057 [http-nio-8088-exec-3] INFO  com.imooc.utils.CookieUtils -========== domainName: localhost ==========
